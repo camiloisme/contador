@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(185, 185, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14rem;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px;
+    border-radius: 20px;
+    gap: 1.5rem;
+}
+
+.numero {
+    background-color: rgb(240, 239, 239);
+    padding: 2rem;
+    width: 15rem;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.botones {
+    display: flex;
+    gap: .5rem;
+}
+
+.aumentar {
+    border: none;
+    background: linear-gradient(50deg, #85017a, #f579d6);
+    color: white;
+    padding: .5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.disminuir {
+    border: none;
+    background: linear-gradient(40deg, #ff0000, #ff8181);
+    color: white;
+    padding: .5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.reestablecer {
+    border: none;
+    background: linear-gradient(45deg, #2681f8, #81e6f8);
+    color: white;
+    padding: .5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.disminuir:hover {
+    background: rgb(255, 0, 0);
+    transform: scale(1.1);
+}
+
+.aumentar:hover {
+    background: #85017a;
+    transform: scale(1.1);
+}
+
+.reestablecer:hover {
+    background: #2681f8;
+    transform: scale(1.1);
+}
+
+@media (max-width:600px) {
+    body {
+        background-color: rgb(185, 185, 238);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 14rem;
+    }
+
+    .tarjeta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        padding: 2rem;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 0 10px;
+        border-radius: 20px;
+        gap: 1.8rem;
+    }
+
+    .numero {
+        background-color: rgb(240, 239, 239);
+        padding: 2rem;
+        width: 80%;
+        border-radius: 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .botones {
+        display: flex;
+        gap: .5rem;
+    }
+
+    .aumentar {
+        border: none;
+        background: linear-gradient(50deg, #85017a, #f579d6);
+        color: white;
+        padding: .5rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .disminuir {
+        border: none;
+        background: linear-gradient(40deg, #ff0000, #ff8181);
+        color: white;
+        padding: .5rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .reestablecer {
+        border: none;
+        background: linear-gradient(45deg, #2681f8, #81e6f8);
+        color: white;
+        padding: .5rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .disminuir:hover {
+        background: rgb(255, 0, 0);
+        transform: scale(1.1);
+    }
+
+    .aumentar:hover {
+        background: #85017a;
+        transform: scale(1.1);
+    }
+
+    .reestablecer:hover {
+        background: #2681f8;
+        transform: scale(1.1);
+    }
+}
