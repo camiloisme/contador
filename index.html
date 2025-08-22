@@ -10,11 +10,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-        <script src="script.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Contador</title>
 </head>
 
-<body>
+<body id="cuerpo">
     <div class="tarjeta">
         <h1>Contador</h1>
         <div class="numero">
@@ -23,9 +23,18 @@
         <div class="botones">
             <button id="aumentar" class="aumentar">Aumentar</button>
             <button id="disminuir" class="disminuir">Disminuir</button>
-            <button id="reestablecer" class="reestablecer">Reestablecer</button>
+            <button id="reestablecer" class="reestablecer">Restablecer</button>
         </div>
-
+        <div class="body-color">
+            <h2>Color<span>Body</span></h2>
+            <form action="" id="forma" class="forma">
+                <label for="color">Introduce Color:</label>
+                <input type="text" id="color" name="color">
+                <button type="submit" class="cambiar-color" id="cambiar-color">Cambiar Color</button>
+                <button class="random">Aleatorio "Proximamente"</button>
+                <button class="original" id="original">Restablecer Color</button>
+            </form>
+        </div>
     </div>
 </body>
 

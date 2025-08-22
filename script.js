@@ -1,3 +1,4 @@
+/*Botones aumentar, disminuir y reestablecer*/
 const botonAumentar = document.getElementById("aumentar")
 const mostrarValorContador = document.getElementById("contador")
 const botonDisminuir = document.getElementById("disminuir")
@@ -21,3 +22,25 @@ botonReestablecer.addEventListener("click", function reestablecerValor(){
 function actualizarContador (){
     mostrarValorContador.textContent = contador;
 }
+/*Boton cambiar color BODY*/
+window.addEventListener("load", function(){
+    //Guardamos el color original y establecemos una variable para el reset del body//
+    const cuerpo = document.getElementById("cuerpo");
+    const colorOriginal = window.getComputedStyle(cuerpo).backgroundColor;
+    //Diccionario de colores//
+
+       
+    //Mi código original para cambio de color//
+    document.getElementById("forma").addEventListener("submit", function(e){
+        e.preventDefault();
+        var colorFondo = document.getElementById("color").value;
+        document.getElementById("cuerpo").style.backgroundColor = colorFondo;
+    })
+    //Acá añadimos la función del reset del body color//
+    document.getElementById("original").addEventListener("click", function(e){
+        e.preventDefault();
+        cuerpo.style.backgroundColor = colorOriginal;
+        document.getElementById("color").value = "";
+    })
+
+})
