@@ -27,9 +27,7 @@ window.addEventListener("load", function(){
     //Guardamos el color original y establecemos una variable para el reset del body//
     const cuerpo = document.getElementById("cuerpo");
     const colorOriginal = window.getComputedStyle(cuerpo).backgroundColor;
-    //Diccionario de colores//
-
-       
+    
     //Mi código original para cambio de color//
     document.getElementById("forma").addEventListener("submit", function(e){
         e.preventDefault();
@@ -44,3 +42,14 @@ window.addEventListener("load", function(){
     })
 
 })
+
+//Color Aleatorio 
+const boton =document.getElementById("random");
+
+boton.addEventListener("click", function(e){
+    e.preventDefault();
+    const colorAleatorio = "#" + Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.backgroundColor = colorAleatorio;
+    document.getElementById("color").value = colorAleatorio;
+
+});

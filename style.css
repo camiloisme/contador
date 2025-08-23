@@ -158,6 +158,120 @@ body {
     color: rgb(34, 34, 34);
     transform: scale(1.1);
 }
+.random {
+        border-radius: 10px;
+        border: none;
+        padding: .5rem;
+        width: 10rem;
+        background-color: #ff8800;
+        color: white;
+        font-family: sans-serif;
+        letter-spacing: .5px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .random:hover {
+        background-color: rgb(136, 88, 0);
+    }
+
+    .modo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    /*Modo Oscuro*/
+
+    .luna {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        padding: 0;
+        width: 40px;
+        transition: transform 0.3s ease;
+        max-width: 2rem;
+        color: white;
+    }
+
+    .luna:hover {
+        transform: scale(1.5);
+    }
+
+    .dark-mode {
+        background-color: rgb(75, 75, 75);
+    }
+
+    .dark-tarjeta {
+        background-color: black;
+    }
+
+    .dark-tarjeta h1 {
+        color: white;
+
+    }
+
+    .dark-numero {
+        background-color: rgb(80, 80, 80);
+        color: white;
+    }
+
+    .dark-aumentar {
+        background: rgb(110, 110, 110);
+    }
+
+    .dark-disminuir {
+        background: rgb(82, 82, 82);
+    }
+
+    .dark-reestablecer {
+        background: rgb(165, 165, 165);
+    }
+
+    .dark-reestablecer:hover,
+    .dark-aumentar:hover,
+    .dark-disminuir:hover {
+        background: white;
+        color: black;
+    }
+
+    .dark-body-color {
+        background-color: gray;
+    }
+
+    .dark-body-color h2 {
+        color: white;
+    }
+
+    .dark-body-color span {
+        color: black;
+    }
+
+    .dark-cambiar-color {
+        background-color: rgb(77, 77, 77);
+    }
+
+    .dark-random {
+        background-color: rgb(34, 34, 34);
+    }
+
+    .dark-original {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .dark-original:hover,
+    .dark-random:hover,
+    .dark-cambiar-color:hover {
+        background-color: whitesmoke;
+        color: black;
+    }
+    .modo h3{
+        color: white;
+    }
+    .oscuro{
+        color: white;
+    }
 
 @media (max-width:600px) {
     body {
@@ -202,6 +316,7 @@ body {
         padding: .5rem;
         border-radius: 10px;
         cursor: pointer;
+        transition: transform 0.3s ease;
     }
 
     .disminuir {
@@ -211,6 +326,7 @@ body {
         padding: .5rem;
         border-radius: 10px;
         cursor: pointer;
+        transition: transform 0.3s ease;
     }
 
     .reestablecer {
@@ -220,6 +336,7 @@ body {
         padding: .5rem;
         border-radius: 10px;
         cursor: pointer;
+        transition: transform 0.3s ease;
     }
 
     .disminuir:hover {
@@ -312,8 +429,9 @@ body {
         color: rgb(34, 34, 34);
         transform: scale(1.1);
     }
-    .random{
-         border-radius: 10px;
+
+    .random {
+        border-radius: 10px;
         border: none;
         padding: .5rem;
         width: 10rem;
@@ -323,5 +441,107 @@ body {
         letter-spacing: .5px;
         font-weight: bold;
         cursor: pointer;
+    }
+
+    .random:hover {
+        background-color: rgb(136, 88, 0);
+    }
+
+    .modo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    /*Modo Oscuro*/
+
+    .luna {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        padding: 0;
+        width: 40px;
+        transition: transform 0.3s ease;
+        max-width: 2rem;
+        color: white;
+    }
+
+    .luna:hover {
+        transform: scale(1.5);
+    }
+
+    .dark-mode {
+        background-color: rgb(75, 75, 75);
+    }
+
+    .dark-tarjeta {
+        background-color: black;
+    }
+
+    .dark-tarjeta h1 {
+        color: white;
+
+    }
+
+    .dark-numero {
+        background-color: rgb(80, 80, 80);
+        color: white;
+    }
+
+    .dark-aumentar {
+        background: rgb(110, 110, 110);
+    }
+
+    .dark-disminuir {
+        background: rgb(82, 82, 82);
+    }
+
+    .dark-reestablecer {
+        background: rgb(165, 165, 165);
+    }
+
+    .dark-reestablecer:hover,
+    .dark-aumentar:hover,
+    .dark-disminuir:hover {
+        background: white;
+        color: black;
+    }
+
+    .dark-body-color {
+        background-color: gray;
+    }
+
+    .dark-body-color h2 {
+        color: white;
+    }
+
+    .dark-body-color span {
+        color: black;
+    }
+
+    .dark-cambiar-color {
+        background-color: rgb(77, 77, 77);
+    }
+
+    .dark-random {
+        background-color: rgb(34, 34, 34);
+    }
+
+    .dark-original {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .dark-original:hover,
+    .dark-random:hover,
+    .dark-cambiar-color:hover {
+        background-color: whitesmoke;
+        color: black;
+    }
+    .modo h3{
+        color: white;
+    }
+    .oscuro{
+        color: white;
     }
 }

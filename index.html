@@ -14,26 +14,35 @@
     <title>Contador</title>
 </head>
 
-<body id="cuerpo">
-    <div class="tarjeta">
+<body id="cuerpo" class="dark-mode">
+    <div class="tarjeta dark-tarjeta">
         <h1>Contador</h1>
-        <div class="numero">
+        <div class="numero dark-numero">
             <h2 id="contador">0</h2>
         </div>
         <div class="botones">
-            <button id="aumentar" class="aumentar">Aumentar</button>
-            <button id="disminuir" class="disminuir">Disminuir</button>
-            <button id="reestablecer" class="reestablecer">Restablecer</button>
+            <button id="aumentar" class="aumentar dark-aumentar">Aumentar</button>
+            <button id="disminuir" class="disminuir dark-disminuir">Disminuir</button>
+            <button id="reestablecer" class="reestablecer dark-reestablecer">Restablecer</button>
         </div>
-        <div class="body-color">
+        <div class="body-color dark-body-color">
             <h2>Color<span>Body</span></h2>
             <form action="" id="forma" class="forma">
                 <label for="color">Introduce Color:</label>
                 <input type="text" id="color" name="color">
-                <button type="submit" class="cambiar-color" id="cambiar-color">Cambiar Color</button>
-                <button class="random">Aleatorio "Proximamente"</button>
-                <button class="original" id="original">Restablecer Color</button>
+                <button type="submit" class="cambiar-color dark-cambiar-color" id="cambiar-color">Cambiar Color</button>
+                <button id="random" class="random dark-random">Color Aleatorio</button>
+                <button class="original dark-original" id="original ">Restablecer Color</button>
             </form>
+        </div>
+        <div class="modo">
+            <h3>Modo Oscuro</h3>
+            <svg class="luna" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+            </svg>
+
         </div>
     </div>
 </body>
